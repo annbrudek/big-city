@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+.container .col-md-11 > img, .container .col-md-6 > img, .container .col-md-2 > img{
+  width: 100%;
+
+}
+
+.content >p {
+  font-family: 'Lusitana', serif;
+  font-size: 17px;
+}
+
+.content {
+  margin-top: 65px;
+}
+
+.author {
+  font-weight: bold;
+
+}
+
+.title {
+  background-color: #f3ce00;
+  text-align: right;
+  width: 625px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: 170px;
+  }
+
+  .title >p {
+    margin-right: 10px;
+  }
+
+.article {
+  position: relative;
+  margin-top: 100px;
+}
+
+.title>p {
+  text-transform: uppercase;
+  font-family: 'Francois One', sans-serif;
+  font-size: 34px;
+}
+
+.social-media {
+  background-color: #000;
+  position: fixed;
+  width: 65px;
+  left: 95%;
+  bottom: 18%;
+  z-index: 1;
+}
+
+.social-media >a > img {
+  margin: 15px 10px 15px 10px;
+
+}
+
+.social-media >a:hover img {
+  border-radius: 50%;
+  background-color: #f3ce00;
+}
+
+.slogan {
+  position: relative;
+}
+ .slogan > .container > .row >.col-md-11 {
+   padding-right: 0;
+   margin-top: 50px;
+ }
+
+.yolo {
+  background-color: #000;
+  text-align: right;
+  width: 1000px;
+  position: absolute;
+  bottom: -10px;
+  left: 5%;
+}
+
+ .yolo p {
+   font-family: 'Francois One', sans-serif;
+   color: #fff;
+   padding: 15px;
+   font-size: 20px;
+   margin-right: 10px;
+ }
+
+footer {
+  margin-top: 50px;
+  color: #000;
+
+}
+
+footer h2, button {
+  margin-left: 20px;
+  font-family: 'Francois One', sans-serif;
+}
+
+footer h2 {
+  margin-bottom: 40px;
+}
+
+footer button {
+  background-color: #f3ce00;
+  border: none;
+  width: 200px;
+  height: 40px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.portrait {
+  background-size: cover;
+
+}
+
+.appreciations {
+  border-left: 2px solid #000;
+  height: 150px;
+}
+
+.appreciations {
+  font-family: 'Francois One', sans-serif;
+}
+
+.author {
+  font-family: 'Francois One', sans-serif;
+}
+
+.author {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.description {
+  font-family: 'Lusitana', serif;
+}
+
+.number {
+  font-size: 60px;
+}
+
+.appreciations p:last-child {
+  text-transform: uppercase;
+}
+
+.appreciations p {
+  margin-left: 30px;
+}
+/*media queries*/
+
+@media (max-width: 1070px) {
+  .yolo {
+    width: 80%;
+  }
+
+  .social-media {
+    left: 92%;
+    width: 65px;
+  }
+}
+
+@media (max-width: 996px) {
+  .appreciations {
+    text-align: center;
+    border: none;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  footer button {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .blocks {
+    padding-right: 0;
+  }
+  .title {
+    width: 500px;
+  }
+
+  .portrait {
+    width: 50%;
+  }
+  }
+
+  @media (max-width: 768px) {
+    .content > p {
+      font-size: 16px;
+    }
+
+  .container .col-md-2 >   .portrait {
+      width: 40%;
+    }
+    .photo {
+      display: flex;
+      justify-content: center;
+    }
+    .social-media {
+      left: 90%;
+      width: 65px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .title {
+      width: 60%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      width: 50%;
+      left: 50px;
+    }
+    .container .col-md-2 >   .portrait {
+        width: 100%;
+      }
+      .social-media {
+        left: 80%;
+        width: 65px;
+      }
+
+      .yolo p {
+        font-size: 16px;
+      }
+
+      .view {
+        height: 200px;
+      }
+  }
